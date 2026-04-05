@@ -44,7 +44,7 @@ A lógica de internacionalização e temas foi separada para manter o código li
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/kaique12santos/nome-do-repositorio.git](https://github.com/kaique12santos/nome-do-repositorio.git)
+   git clone [https://github.com/kaique12santos/portifolio.git](https://github.com/kaique12santos/portifolio.git)
    ```
 2. Abra a pasta do projeto no seu editor de código favorito (ex: VS Code).
 3. Utilize a extensão **Live Server** ou abra o arquivo `index.html` diretamente no seu navegador.
