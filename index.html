@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favecon-1.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-sigil">K·A·I·Q·U·E</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-key="nav-about">Pergaminho</a></li>
+      <li><a href="#projects" data-key="nav-projects">Quests</a></li>
+      <li><a href="#skills" data-key="nav-skills">Habilidades</a></li>
+      <li><a href="#journey" data-key="nav-journey">Jornada</a></li>
+      <li><a href="#contact" data-key="nav-contact">Invocar</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="toggle-mode" class="control-btn" title="Alternar Modo de Leitura">
+        <span class="material-symbols-outlined" id="mode-icon">auto_stories</span>
+      </button>
+      <button id="toggle-lang" class="control-btn" title="Change Language">PT</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-frame">
+      <div class="hero-ornament"><span class="material-symbols-outlined">swords</span></div>
+      <p class="hero-subtitle-top" data-key="hero-subtitle">— Portfólio de Desenvolvedor —</p>
+      <h1 class="hero-title">Kaique <span>Dev</span></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-class">Backend &nbsp;·&nbsp; Full Stack &nbsp;·&nbsp; DSM · Fatec ZL</p>
+      <p class="hero-bio" data-key="hero-bio">
+        Arquiteto de sistemas e forjador de interfaces. Especializado em construir
+        APIs robustas, experiências de usuário refinadas e software institucional
+        que resiste ao teste do tempo — e ao teste do usuário.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <span class="stat-value">4°</span>
+          <span class="stat-label" data-key="stat-semestre">Semestre</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value">2+</span>
+          <span class="stat-label" data-key="stat-projetos">Projetos</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value">Node</span>
+          <span class="stat-label" data-key="stat-classe">Classe</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value">⬆</span>
+          <span class="stat-label" data-key="stat-nivel">Nível JR</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" data-key="hero-btn-primary">Ver Quests</a>
+        <a href="#contact" class="btn-outline" data-key="hero-btn-outline">Invocar Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-eyebrow" data-key="about-eyebrow">Ficha do Personagem</span>
+      <h2 class="section-title" data-key="about-title">O Pergaminho do Aventureiro</h2>
+      <div class="section-divider">
+        <div class="divider-diamond"></div>
+      </div>
+    </div>
+
+    <div class="about-inner">
+      <div class="character-sheet reveal">
+        <p class="sheet-title" data-key="sheet-title">— Ficha —</p>
+        <div class="sheet-avatar">
+          <span class="avatar-placeholder">K</span>
+          <div class="quest-banner-overlay">
+            <img src="/images/perfil (2).jpeg" alt="Foto de perfil de Kaique" class="avatar-image">
+          </div>
+          <span class="avatar-label" data-key="sheet-status">Buscando Novas Quests</span>
+        </div>
+        <div class="sheet-attrs">
+          <div class="attr-row">
+            <span class="attr-name" data-key="attr-name-label">Nome</span>
+            <span class="attr-val">Kaique</span>
+          </div>
+          <div class="attr-row">
+            <span class="attr-name" data-key="attr-class-label">Classe</span>
+            <span class="attr-val">Backend Dev</span>
+          </div>
+          <div class="attr-row">
+            <span class="attr-name" data-key="attr-guild-label">Guilda</span>
+            <span class="attr-val">Fatec ZL</span>
+          </div>
+          <div class="attr-row">
+            <span class="attr-name" data-key="attr-loc-label">Localidade</span>
+            <span class="attr-val">São Paulo, BR</span>
+          </div>
+          <div class="attr-row">
+            <span class="attr-name" data-key="attr-weapon-label">Arma Principal</span>
+            <span class="attr-val">Node.js + SQL</span>
+          </div>
+          <div class="attr-row">
+            <span class="attr-name" data-key="attr-status-label">Status</span>
+            <span class="attr-val" style="color:#8bc34a" data-key="attr-status-val">🟢 Disponível</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal reveal-delay-2">
+        <h3 data-key="about-title">Sobre o Aventureiro</h3>
+        <p data-key="about-p1">
+          Mago Estudante de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, focado em arquitetura
+          backend, design de APIs RESTful e em forjar experiências de usuário que equilibram funcionalidade e estética.
+        </p>
+        <p data-key="about-p2">
+          Minha jornada de missões é marcada pela evolução técnica e liderança. Iniciei coordenando a equipe e o backend
+          do <strong>SGPI</strong> (Gestão de Projetos Integradores). Essa base me permitiu atuar como <strong>Monitor
+            de Engenharia de Software</strong>, guiando outros estudantes em metodologias ágeis e modelagem de sistemas.
+          Hoje, combino essa bagagem de código e mentoria atuando como Tech Lead e Líder de Projeto no
+          <strong>SisLab</strong> (sistema de reservas de laboratórios).
+        </p>
+        <p data-key="about-p3">
+          Minha filosofia: código limpo é como um pergaminho bem escrito, ele conta uma história. Cada endpoint, cada
+          componente e cada migração de banco deve fazer sentido por si só.
+        </p>
+
+        <div class="skill-bars">
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Node.js / Express</span>
+              <span class="skill-level" data-key="lvl-master">Mestre</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:85%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">React / MUI</span>
+              <span class="skill-level" data-key="lvl-advanced">Avançado</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:75%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">SQL / MySQL</span>
+              <span class="skill-level" data-key="lvl-advanced">Avançado</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:80%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">React Native / Mobile</span>
+              <span class="skill-level" data-key="lvl-mid">Intermediário</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:55%"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-level" data-key="lvl-mid">Intermediário</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / QUESTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-eyebrow" data-key="projects-eyebrow">Missões Concluídas &amp; Em Curso</span>
+      <h2 class="section-title" data-key="projects-title">O Livro de Quests</h2>
+      <div class="section-divider">
+        <div class="divider-diamond"></div>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- CARD 1 - SisLab -->
+      <div class="quest-card reveal">
+        <div class="quest-banner">
+          <img src="/images/sisLab.png" alt="SisLab" class="avatar-image">
+          <span class="quest-badge badge-main" data-key="rank-1">Principal</span>
+          <div class="quest-banner-overlay"></div>
+        </div>
+        <div class="quest-body">
+          <p class="quest-rank" data-key="rank-1">O Guardião dos Laboratórios</p>
+          <h3 class="quest-name">SisLab — Sistema de Reserva de Laboratórios</h3>
+          <p class="quest-desc">
+            Sistema institucional para gestão de reservas de laboratórios na Fatec ZL.
+            Arquitetura Controller → Service → Repository, JWT Auth, auditoria com
+            EventBus e rollback transacional para conflitos.
+          </p>
+          <div class="quest-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">React</span>
+            <span class="tag">MUI</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">GitHub</span>
+          </div>
+          <div class="quest-footer">
+            <a href="https://github.com/kaique12santos/Sistema_de_reservas_de_laboratorios" class="quest-link" target="_blank">
+              <span class="material-symbols-outlined">swords</span> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 - SGPI -->
+      <div class="quest-card reveal reveal-delay-1">
+        <div class="quest-banner">
+          <img src="/images/sgpi_icon.png" alt="SGPI" class="avatar-image">
+          <div class="quest-banner-overlay"></div>
+          <span class="quest-badge badge-side" data-key="rank-2">Em Curso</span>
+        </div>
+        <div class="quest-body">
+          <p class="quest-rank" data-key="rank-2">O Grimório da Guilda 2.0 (GED)</p>
+          <h3 class="quest-name">SGPI — Sistema de Gestão de Projetos Integradores</h3>
+          <p class="quest-desc">
+            Plataforma de gerenciamento para projetos integradores acadêmicos.
+            Liderança técnica no backend e coordenação de equipe como Project Leader.
+          </p>
+          <div class="quest-tags">
+            <span class="tag">Backend</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Gestão Ágil</span>
+            <span class="tag">Clean Architecture</span>
+            <span class="tag">Escalabilidade</span>
+            <span class="tag">Testes Unitários</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <div class="quest-footer">
+            <a href="https://github.com/kaique12santos/sgpi2.0" class="quest-link" target="_blank">
+              <span class="material-symbols-outlined">swords</span> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 - API Notificação -->
+      <div class="quest-card reveal reveal-delay-2">
+        <div class="quest-banner">
+          <img src="/images/API_notifica_icon.png" alt="API Notificação" class="avatar-image">
+          <div class="quest-banner-overlay"></div>
+          <span class="quest-badge badge-done" data-key="rank-3">Concluída</span>
+        </div>
+        <div class="quest-body">
+          <p class="quest-rank" data-key="rank-3">A Rede de Energia Arcana</p>
+          <h3 class="quest-name">API de Eventos e Notificações</h3>
+          <p class="quest-desc">
+            Backend para processamento de eventos assíncronos e notificações.
+            Aplicação rigorosa de Programação Orientada a Objetos (POO) e
+            Padrões de Projeto (com Observer) para criar um sistema desacoplado,
+            extensível e robusto.
+          </p>
+          <div class="quest-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">POO</span>
+            <span class="tag">Padrões de Projeto</span>
+          </div>
+          <div class="quest-footer">
+            <a href="https://github.com/kaique12santos/API_Eventos_Notificacoes" target="_blank" class="quest-link">
+              <span class="material-symbols-outlined">swords</span> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 - API Tasks -->
+      <div class="quest-card reveal reveal-delay-1">
+        <div class="quest-banner">
+          <img src="/images/API_tasks_icon.png" alt="API Tasks" class="avatar-image">
+          <div class="quest-banner-overlay"></div>
+          <span class="quest-badge badge-done" data-key="rank-4">Concluída</span>
+        </div>
+        <div class="quest-body">
+          <p class="quest-rank" data-key="rank-4">O Forjador de Runas Sólidas</p>
+          <h3 class="quest-name">API de Tarefas</h3>
+          <p class="quest-desc">
+            API RESTful para gestão de tarefas e avaliações.
+            Desenvolvida sob a filosofia Clean Code,
+            aplicando os princípios SOLID para garantir código robusto,
+            testável e de fácil manutenção, com cobertura de testes unitários (TDD).
+          </p>
+          <div class="quest-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Clean Code</span>
+            <span class="tag">SOLID</span>
+          </div>
+          <div class="quest-footer">
+            <a href="https://github.com/kaique12santos/node-tasks-reviews-api" target="_blank" class="quest-link">
+              <span class="material-symbols-outlined">swords</span> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 - Vazio / Novo projeto -->
+      <div class="quest-card reveal reveal-delay-2 quest-card-future">
+        <div class="quest-banner">
+          <img src="/images/proxima_quest_icon.png" alt="Trilha Mística para Próxima Quest" class="quest-img-future">
+          <div class="quest-banner-overlay"></div>
+          <span class="quest-badge badge-future" data-key="rank-5">⏳ Em Breve</span>
+        </div>
+
+        <div class="quest-body">
+          <p class="quest-rank" data-key="rank-5">Planejando a próxima Quest</p>
+          <h3 class="quest-name" data-key="future-title">A Jornada Continua</h3>
+          <p class="quest-desc" data-key="future-desc">
+            Este espaço está reservado para a próxima quest que forjaremos juntos.
+            O próximo grimório de código, o próximo feitiço de interface.
+          </p>
+          <div class="quest-footer">
+            <a href="#contact" class="quest-link">
+              <span class="quest-link-icon">✉</span> <span data-key="future-btn">Mande sua Quest</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / TOMES -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-eyebrow" data-key="skills-eyebrow">Arsenal &amp; Grimório</span>
+      <h2 class="section-title" data-key="skills-title">Habilidades &amp; Ferramentas</h2>
+      <div class="section-divider">
+        <div class="divider-diamond"></div>
+      </div>
+    </div>
+
+    <div class="skills-inner">
+      <div class="skill-tome reveal">
+        <div class="tome-icon"><img src="/images/engrenagem_icon.png" alt="Engrenagem" class="avatar-image"></div>
+        <p class="tome-title" data-key="skill-cat-1">Backend & APIs</p>
+        <ul class="tome-list">
+          <li>Node.js / Express</li>
+          <li>Java (básico)</li>
+          <li>REST APIs + JWT</li>
+          <li>Zod Validation</li>
+          <li>Nodemailer</li>
+        </ul>
+      </div>
+      <div class="skill-tome reveal reveal-delay-1">
+        <div class="tome-icon"><img src="/images/BD_icon.png" alt="Banco de Dados" class="avatar-image"></div>
+        <p class="tome-title" data-key="skill-cat-2">Banco de Dados</p>
+        <ul class="tome-list">
+          <li>MySQL</li>
+          <li>Transações & Rollback</li>
+          <li>Modelagem relacional</li>
+          <li>Migrations</li>
+        </ul>
+      </div>
+      <div class="skill-tome reveal reveal-delay-2">
+        <div class="tome-icon"><img src="/images/frontend_icon2.png" alt="Frontend" class="avatar-image"></div>
+        <p class="tome-title" data-key="skill-cat-3">Frontend</p>
+        <ul class="tome-list">
+          <li>React.js / MUI</li>
+          <li>HTML / CSS / JS</li>
+          <li>React Native + Expo</li>
+          <li>TypeScript</li>
+        </ul>
+      </div>
+      <div class="skill-tome reveal reveal-delay-1">
+        <div class="tome-icon"><img src="/images/designer_icon.png" alt="Design & UX" class="avatar-image"></div>
+        <p class="tome-title" data-key="skill-cat-4">Design & UX</p>
+        <ul class="tome-list">
+          <li>Figma</li>
+          <li>UX Personas / Empathy Map</li>
+          <li>Prototipagem lo-fi & hi-fi</li>
+          <li>Design Systems</li>
+        </ul>
+      </div>
+      <div class="skill-tome reveal reveal-delay-2">
+        <div class="tome-icon"><img src="/images/qualidade_icon.png" alt="Qualidade" class="avatar-image"></div>
+        <p class="tome-title" data-key="skill-cat-5">Qualidade</p>
+        <ul class="tome-list">
+          <li>Jest / Supertest</li>
+          <li>React Testing Library</li>
+          <li>Swagger / OpenAPI</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+      <div class="skill-tome reveal reveal-delay-3">
+        <div class="tome-icon"><img src="/images/devops_icon.png" alt="DevOps & Ferramentas" class="avatar-image"></div>
+        <p class="tome-title" data-key="skill-cat-6">DevOps & Ferramentas</p>
+        <ul class="tome-list">
+          <li>Git / GitHub</li>
+          <li>Docker (básico)</li>
+          <li>Linux</li>
+          <li>Scrum / Kanban</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY / TIMELINE -->
+  <section id="journey">
+    <div class="section-header reveal">
+      <span class="section-eyebrow" data-key="journey-eyebrow">Registro de Aventuras</span>
+      <h2 class="section-title" data-key="journey-title">A Jornada</h2>
+      <div class="section-divider">
+        <div class="divider-diamond"></div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <p class="tl-date" data-key="j-date-1">2026 – Presente</p>
+        <h3 class="tl-title" data-key="j-title-1">Desenvolvedor Full Stack & Tech Lead — SisLab</h3>
+        <p class="tl-desc" data-key="j-desc-1">
+          Construção do sistema institucional de reservas de laboratórios para a Fatec ZL. Liderança
+          de projeto, Full Stack e contribuição direta no design e prototipagem da interfaces.
+        </p>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-1">
+        <p class="tl-date" data-key="j-date-2">2025 – Chegando ao Fim...</p>
+        <h3 class="tl-title" data-key="j-title-2">Backend Lead & Project Leader — SGPI</h3>
+        <p class="tl-desc" data-key="j-desc-2">
+          Liderança técnica e de equipe no desenvolvimento do Sistema de Gestão de
+          Projetos Integradores. Responsável por arquitetura, revisão de código e entregas.
+        </p>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-2">
+        <p class="tl-date" data-key="j-date-3">Ago 2025 – Dez 2025</p>
+        <h3 class="tl-title" data-key="j-title-3">Monitor de Engenharia de Software — Fatec ZL</h3>
+        <p class="tl-desc" data-key="j-desc-3">
+          Apoio a estudantes nas disciplinas de Engenharia de Software I e II, facilitando a
+          compreensão de padrões arquiteturais, metodologias ágeis e documentação de sistemas e os seus
+          artefatos.
+        </p>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-3">
+        <p class="tl-date" data-key="j-date-4">2024 – Jun 2027 (Previsão)</p>
+        <h3 class="tl-title" data-key="j-title-4">Ingresso em DSM — Fatec Zona Leste</h3>
+        <p class="tl-desc" data-key="j-desc-4">
+          Início da formação como Tecnólogo em Desenvolvimento de Software Multiplataforma,
+          com foco em desenvolvimento web, mobile e Desktop.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-eyebrow" data-key="contact-eyebrow">Invocação &amp; Contato</span>
+      <h2 class="section-title" data-key="contact-title">Abrir um Pergaminho</h2>
+      <div class="section-divider">
+        <div class="divider-diamond"></div>
+      </div>
+    </div>
+
+    <div class="contact-inner reveal">
+      <p class="contact-intro" data-key="contact-intro">
+        Busca um backend para sua guilda?<br>
+        Tem uma quest interessante em mente?<br>
+        <strong>Invoque aqui.</strong>
+      </p>
+      <div class="contact-links">
+        <a href="mailto:exemplo@email.com" class="contact-link">
+          <img src="/images/email_icon.png" alt="Ícone de Carta" class="contact-img-icon">
+          E-mail
+        </a>
+
+        <a href="https://www.linkedin.com/in/kaique-caitano-b68b902ba/" target="_blank" class="contact-link">
+          <img src="/images/linkedin_icon.png" alt="Ícone de Guilda" class="contact-img-icon">
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/kaique12santos" target="_blank" class="contact-link">
+          <img src="/images/github_icon.png" alt="Ícone de Grimório" class="contact-img-icon">
+          GitHub
+        </a>
+      </div>
+
+      <div class="profile-avatar-container">
+        <video class="avatar-animation" autoplay loop muted playsinline>
+          <source src="/images/Mago_video.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">
+      <span class="material-symbols-outlined">swords</span>
+      <span data-key="footer-text">MMXXV &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forjado com Node.js &amp; Café</span>
+      <span class="material-symbols-outlined">swords</span>
+    </p>
+  </footer>
+
+  <script src="./js/content.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
