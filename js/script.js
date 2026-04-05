@@ -71,4 +71,4 @@ const setupRunes = (quantity) => {
 };
 
 // Exemplo: Gerar 15 runas
-window.addEventListener('DOMContentLoaded', () => setupRunes(200));
+window.addEventListener('DOMContentLoaded', () => setupRunes(100));
