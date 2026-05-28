@@ -12,19 +12,16 @@
   
   <meta property="og:image" content="https://kaiquecaitanodev.vercel.app/images/print_page.webp" />
   <link rel="shortcut icon" type="image/x-icon" href="/images/favecon-1.webp">
- <!-- 1. PRECONNECT: Cria a ponte com os servidores do Google antecipadamente -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- 2. ÍCONES ASSÍNCRONOS: Descarrega em background e aplica sem travar -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" media="print" onload="this.media='all'" />
 
-  <!-- 3. FONTES ASSÍNCRONAS: O mesmo processo para as fontes Cinzel e IM Fell -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Uncial+Antiqua&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Uncial+Antiqua&display=swap" media="print" onload="this.media='all'" />
 
-  <!-- Fallback de segurança caso o JavaScript do utilizador esteja desligado -->
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Uncial+Antiqua&display=swap" />
@@ -105,7 +102,13 @@
         <div class="sheet-avatar">
           <span class="avatar-placeholder">K</span>
           <div class="quest-banner-overlay">
-            <img src="/images/perfil (2).webp" alt="Foto de perfil de Kaique" class="avatar-image" loading="lazy">
+            <img 
+              src="/images/perfil (2)-1000.webp" 
+              srcset="/images/perfil (2)-400.webp 400w, /images/perfil (2)-800.webp 800w, /images/perfil (2)-1000.webp 1000w" 
+              sizes="(max-width: 700px) 100vw, 33vw"
+              alt="Foto de perfil de Kaique" 
+              class="avatar-image" 
+              loading="lazy">
           </div>
           <span class="avatar-label" data-key="sheet-status">Buscando Novas Quests</span>
         </div>
@@ -219,7 +222,13 @@
 
       <div class="quest-card reveal">
         <div class="quest-banner">
-          <img src="/images/sisLab.webp" alt="SisLab" class="avatar-image" loading="lazy">
+          <img 
+            src="/images/sisLab-1000.webp" 
+            srcset="/images/sisLab-400.webp 400w, /images/sisLab-800.webp 800w, /images/sisLab-1000.webp 1000w" 
+            sizes="(max-width: 700px) 100vw, 33vw"
+            alt="SisLab" 
+            class="avatar-image" 
+            loading="lazy">
           <span class="quest-badge badge-main" data-key="rank-1">Principal</span>
           <div class="quest-banner-overlay"></div>
         </div>
@@ -249,7 +258,13 @@
 
       <div class="quest-card reveal reveal-delay-1">
         <div class="quest-banner">
-          <img src="/images/sgpi_icon.webp" alt="SGPI" class="avatar-image" loading="lazy">
+          <img 
+            src="/images/sgpi_icon-1000.webp" 
+            srcset="/images/sgpi_icon-400.webp 400w, /images/sgpi_icon-800.webp 800w, /images/sgpi_icon-1000.webp 1000w" 
+            sizes="(max-width: 700px) 100vw, 33vw"
+            alt="SGPI" 
+            class="avatar-image" 
+            loading="lazy">
           <div class="quest-banner-overlay"></div>
           <span class="quest-badge badge-side" data-key="rank-2">Em Curso</span>
         </div>
@@ -279,7 +294,13 @@
 
       <div class="quest-card reveal reveal-delay-2">
         <div class="quest-banner">
-          <img src="/images/API_notifica_icon.webp" alt="API Notificação" class="avatar-image" loading="lazy">
+          <img 
+            src="/images/API_notifica_icon-1000.webp" 
+            srcset="/images/API_notifica_icon-400.webp 400w, /images/API_notifica_icon-800.webp 800w, /images/API_notifica_icon-1000.webp 1000w" 
+            sizes="(max-width: 700px) 100vw, 33vw"
+            alt="API Notificação" 
+            class="avatar-image" 
+            loading="lazy">
           <div class="quest-banner-overlay"></div>
           <span class="quest-badge badge-done" data-key="rank-3">Concluída</span>
         </div>
@@ -309,7 +330,13 @@
 
       <div class="quest-card reveal reveal-delay-1">
         <div class="quest-banner">
-          <img src="/images/API_tasks_icon.webp" alt="API Tasks" class="avatar-image" loading="lazy">
+          <img 
+            src="/images/API_tasks_icon-1000.webp" 
+            srcset="/images/API_tasks_icon-400.webp 400w, /images/API_tasks_icon-800.webp 800w, /images/API_tasks_icon-1000.webp 1000w" 
+            sizes="(max-width: 700px) 100vw, 33vw"
+            alt="API Tasks" 
+            class="avatar-image" 
+            loading="lazy">
           <div class="quest-banner-overlay"></div>
           <span class="quest-badge badge-done" data-key="rank-4">Concluída</span>
         </div>
@@ -339,7 +366,13 @@
 
       <div class="quest-card reveal reveal-delay-2 quest-card-future">
         <div class="quest-banner">
-          <img src="/images/proxima_quest_icon.webp" alt="Trilha Mística para Próxima Quest" class="quest-img-future" loading="lazy">
+          <img 
+            src="/images/proxima_quest_icon-1000.webp" 
+            srcset="/images/proxima_quest_icon-400.webp 400w, /images/proxima_quest_icon-800.webp 800w, /images/proxima_quest_icon-1000.webp 1000w" 
+            sizes="(max-width: 700px) 100vw, 33vw"
+            alt="Trilha Mística para Próxima Quest" 
+            class="quest-img-future" 
+            loading="lazy">
           <div class="quest-banner-overlay"></div>
           <span class="quest-badge badge-future" data-key="rank-5">⏳ Em Breve</span>
         </div>
@@ -372,7 +405,15 @@
 
     <div class="skills-inner">
       <div class="skill-tome reveal">
-        <div class="tome-icon"><img src="/images/engrenagem_icon.webp" alt="Engrenagem" class="avatar-image" loading="lazy"></div>
+        <div class="tome-icon">
+          <img 
+            src="/images/engrenagem_icon-1000.webp" 
+            srcset="/images/engrenagem_icon-400.webp 400w, /images/engrenagem_icon-800.webp 800w, /images/engrenagem_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Engrenagem" 
+            class="avatar-image" 
+            loading="lazy">
+        </div>
         <p class="tome-title" data-key="skill-cat-1">Backend & APIs</p>
         <ul class="tome-list">
           <li>Node.js / Express</li>
@@ -383,7 +424,15 @@
         </ul>
       </div>
       <div class="skill-tome reveal reveal-delay-1">
-        <div class="tome-icon"><img src="/images/BD_icon.webp" alt="Banco de Dados" class="avatar-image" loading="lazy"></div>
+        <div class="tome-icon">
+          <img 
+            src="/images/BD_icon-1000.webp" 
+            srcset="/images/BD_icon-400.webp 400w, /images/BD_icon-800.webp 800w, /images/BD_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Banco de Dados" 
+            class="avatar-image" 
+            loading="lazy">
+        </div>
         <p class="tome-title" data-key="skill-cat-2">Banco de Dados</p>
         <ul class="tome-list">
           <li>MySQL</li>
@@ -393,7 +442,15 @@
         </ul>
       </div>
       <div class="skill-tome reveal reveal-delay-2">
-        <div class="tome-icon"><img src="/images/frontend_icon2.webp" alt="Frontend" class="avatar-image" loading="lazy"></div>
+        <div class="tome-icon">
+          <img 
+            src="/images/frontend_icon2-1000.webp" 
+            srcset="/images/frontend_icon2-400.webp 400w, /images/frontend_icon2-800.webp 800w, /images/frontend_icon2-1000.webp 1000w" 
+            sizes="200px"
+            alt="Frontend" 
+            class="avatar-image" 
+            loading="lazy">
+        </div>
         <p class="tome-title" data-key="skill-cat-3">Frontend</p>
         <ul class="tome-list">
           <li>React.js / MUI</li>
@@ -403,7 +460,15 @@
         </ul>
       </div>
       <div class="skill-tome reveal reveal-delay-1">
-        <div class="tome-icon"><img src="/images/designer_icon.webp" alt="Design & UX" class="avatar-image" loading="lazy"></div>
+        <div class="tome-icon">
+          <img 
+            src="/images/designer_icon-1000.webp" 
+            srcset="/images/designer_icon-400.webp 400w, /images/designer_icon-800.webp 800w, /images/designer_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Design & UX" 
+            class="avatar-image" 
+            loading="lazy">
+        </div>
         <p class="tome-title" data-key="skill-cat-4">Design & UX</p>
         <ul class="tome-list">
           <li>Figma</li>
@@ -413,7 +478,15 @@
         </ul>
       </div>
       <div class="skill-tome reveal reveal-delay-2">
-        <div class="tome-icon"><img src="/images/qualidade_icon.webp" alt="Qualidade" class="avatar-image" loading="lazy"></div>
+        <div class="tome-icon">
+          <img 
+            src="/images/qualidade_icon-1000.webp" 
+            srcset="/images/qualidade_icon-400.webp 400w, /images/qualidade_icon-800.webp 800w, /images/qualidade_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Qualidade" 
+            class="avatar-image" 
+            loading="lazy">
+        </div>
         <p class="tome-title" data-key="skill-cat-5">Qualidade</p>
         <ul class="tome-list">
           <li>Jest / Supertest</li>
@@ -423,7 +496,15 @@
         </ul>
       </div>
       <div class="skill-tome reveal reveal-delay-3">
-        <div class="tome-icon"><img src="/images/devops_icon.webp" alt="DevOps & Ferramentas" class="avatar-image" loading="lazy"></div>
+        <div class="tome-icon">
+          <img 
+            src="/images/devops_icon-1000.webp" 
+            srcset="/images/devops_icon-400.webp 400w, /images/devops_icon-800.webp 800w, /images/devops_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="DevOps & Ferramentas" 
+            class="avatar-image" 
+            loading="lazy">
+        </div>
         <p class="tome-title" data-key="skill-cat-6">DevOps & Ferramentas</p>
         <ul class="tome-list">
           <li>Git / GitHub</li>
@@ -501,23 +582,41 @@
       </p>
       <div class="contact-links">
         <a href="mailto:exemplo@email.com" class="contact-link">
-          <img src="/images/email_icon.webp" alt="Ícone de Carta" class="contact-img-icon" loading="lazy">
+          <img 
+            src="/images/email_icon-1000.webp" 
+            srcset="/images/email_icon-400.webp 400w, /images/email_icon-800.webp 800w, /images/email_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Ícone de Carta" 
+            class="contact-img-icon" 
+            loading="lazy">
           E-mail
         </a>
 
         <a href="https://www.linkedin.com/in/kaique-caitano-b68b902ba/" target="_blank" class="contact-link">
-          <img src="/images/linkedin_icon.webp" alt="Ícone de Guilda" class="contact-img-icon" loading="lazy">
+          <img 
+            src="/images/linkedin_icon-1000.webp" 
+            srcset="/images/linkedin_icon-400.webp 400w, /images/linkedin_icon-800.webp 800w, /images/linkedin_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Ícone de Guilda" 
+            class="contact-img-icon" 
+            loading="lazy">
           LinkedIn
         </a>
 
         <a href="https://github.com/kaique12santos" target="_blank" class="contact-link">
-          <img src="/images/github_icon.webp" alt="Ícone de Grimório" class="contact-img-icon" loading="lazy">
+          <img 
+            src="/images/github_icon-1000.webp" 
+            srcset="/images/github_icon-400.webp 400w, /images/github_icon-800.webp 800w, /images/github_icon-1000.webp 1000w" 
+            sizes="200px"
+            alt="Ícone de Grimório" 
+            class="contact-img-icon" 
+            loading="lazy">
           GitHub
         </a>
       </div>
 
       <div class="profile-avatar-container">
-        <video class="avatar-animation" autoplay loop muted playsinline poster="/images/perfil (2).webp">
+        <video class="avatar-animation" autoplay loop muted playsinline poster="/images/perfil (2)-1000.webp">
           <source src="/images/Mago_video.mp4" type="video/mp4">
           Seu navegador não suporta vídeos.
         </video>
