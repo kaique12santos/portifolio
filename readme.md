@@ -1,7 +1,7 @@
 
 # ⚔️ Kaique Dev - Portfólio Interativo
 
-![Portfólio Preview](/images/print_page.webp)
+![Portfólio Preview](/images/print_page-1000.webp)
 
 Bem-vindo ao repositório do meu portfólio pessoal. Este projeto não é apenas uma vitrine das minhas habilidades como desenvolvedor Backend e Full Stack, mas também um experimento de **IHC (Interação Humano-Computador)** e **UX Design**.
 
