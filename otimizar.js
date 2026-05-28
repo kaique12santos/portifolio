@@ -33,11 +33,10 @@ async function otimizarImagens() {
         
         // Garante que não vamos esticar imagens pequenas
         const targetWidth = Math.min(size, metadata.width);
-        const outputPath = path.join(outputDir, `${fileNameWithoutExt}-${targetWidth}.webp`);
-
+        const outputPath = path.join(outputDir, `${fileNameWithoutExt}-${size}.webp`);
         // Se o ficheiro já foi gerado numa execução anterior, poupamos a CPU
         if (fs.existsSync(outputPath)) {
-          console.log(`⏩ Já existe: ${fileNameWithoutExt}-${targetWidth}.webp`);
+          console.log(`⏩ Já existe: ${fileNameWithoutExt}-${size}.webp`);
           // Se a imagem original já é menor ou igual ao targetWidth, não faz sentido testar tamanhos maiores
           if (metadata.width <= size) break; 
           continue;
