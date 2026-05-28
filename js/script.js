@@ -1,46 +1,46 @@
- const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    
+    // Animação de Revelar
+    if (entry.isIntersecting && entry.target.classList.contains('reveal')) {
+      entry.target.classList.add('visible');
+    }
+
+    // Destaque da Nav 
+    if (entry.isIntersecting && entry.target.tagName === 'SECTION') {
+      const id = entry.target.getAttribute('id');
+      navLinks.forEach(link => {
+        // Verifica se o link corresponde à seção visível
+        if (link.getAttribute('href') === '#' + id) {
+          link.style.color = 'var(--gold-light)';
+        } else {
+          link.style.color = '';
+        }
+      });
+    }
+
+    // Barras de Skill 
+    if (entry.isIntersecting && entry.target.classList.contains('skill-bar-fill')) {
+      const targetWidth = entry.target.getAttribute('data-width');
+      if (targetWidth) {
+        entry.target.style.width = targetWidth;
+        sectionObserver.unobserve(entry.target); // Para de observar após animar
       }
-    });
-  }, { threshold: 0.12 });
-  revealEls.forEach(el => observer.observe(el));
-
-  // Skill bar animation on scroll
-  const skillFills = document.querySelectorAll('.skill-bar-fill');
-  const fillObserver = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.width = e.target.style.width; // trigger reflow
-        fillObserver.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  skillFills.forEach(el => {
-    const w = el.style.width;
-    el.style.width = '0';
-    fillObserver.observe(el);
-    setTimeout(() => { el.style.width = w; }, 200);
+    }
   });
+}, { 
+  threshold: 0.1, // Dispara com 10% de visibilidade
+  rootMargin: '0px 0px -50px 0px' // Dispara 50px antes de entrar totalmente, para ser mais fluido
+});
 
-  // Nav active link highlighting on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 80) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current
-        ? 'var(--gold-light)' : '';
-    });
-  });
+// 3. Inicializar o Observador
+document.querySelectorAll('.reveal, section[id], .skill-bar-fill').forEach(el => {
+  sectionObserver.observe(el);
+});
 
-  // --- Gerador de Partículas de Runas ---
+// 4. Gerador de Partículas de Runas
 const setupRunes = (quantity) => {
   const container = document.body;
   const runeSymbols = ['ᚱ', 'ᚠ', 'ᚢ', 'ᚨ', 'ᚺ', 'ᛗ', 'ᛒ', 'ᛞ', 'ᛟ', 'ᚦ', 'ᚲ'];
@@ -48,27 +48,19 @@ const setupRunes = (quantity) => {
   for (let i = 0; i < quantity; i++) {
     const span = document.createElement('span');
     span.className = 'rune-particle';
-    
-    // Escolhe um símbolo aleatório do array
-    const randomRune = runeSymbols[Math.floor(Math.random() * runeSymbols.length)];
-    span.textContent = randomRune;
+    span.textContent = runeSymbols[Math.floor(Math.random() * runeSymbols.length)];
 
-    // Gera valores aleatórios para parecer natural
-    const randomLeft = Math.floor(Math.random() * 100) + '%';
-    const randomDuration = (Math.random() * 10 + 10).toFixed(1) + 's'; // Entre 10s e 20s
-    const randomDelay = (Math.random() * 15).toFixed(1) + 's'; // Delay de até 15s
-    const randomTop = (Math.random() * 10 + 90) + '%'; // Começa entre 90% e 100% da altura
-
-    // Aplica os estilos
-    span.style.left = randomLeft;
-    span.style.top = randomTop;
-    span.style.animationDuration = randomDuration;
-    span.style.animationDelay = randomDelay;
-    span.style.fontSize = (Math.random() * 0.5 + 1) + 'rem'; // Tamanhos variados (1rem a 1.5rem)
+    span.style.left = Math.floor(Math.random() * 100) + '%';
+    span.style.top = (Math.random() * 10 + 90) + '%';
+    span.style.animationDuration = (Math.random() * 10 + 10).toFixed(1) + 's';
+    span.style.animationDelay = (Math.random() * 5).toFixed(1) + 's';
+    span.style.fontSize = (Math.random() * 0.5 + 1) + 'rem';
 
     container.appendChild(span);
   }
 };
 
-// Exemplo: Gerar 15 runas
-window.addEventListener('DOMContentLoaded', () => setupRunes(100));
+// Carregar runas após o site estar pronto para n engasgar o início
+window.addEventListener('load', () => {
+  setTimeout(() => setupRunes(25), 1000); 
+});

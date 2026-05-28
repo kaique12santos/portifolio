@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  let currentMode = 'rpg'; // Modo inicial (rpg ou normal)
-  let currentLang = 'pt';  // Idioma inicial (pt ou en)
+  let currentMode = 'rpg'; 
+  let currentLang = 'pt';  
 
   const modeBtn = document.getElementById('toggle-mode');
   const modeIcon = document.getElementById('mode-icon');
@@ -28,24 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentMode === 'rpg') {
       currentMode = 'normal';
       document.body.classList.add('normal-mode');
-      modeIcon.textContent = 'work'; // Ícone de maleta
+      modeIcon.textContent = 'work'; 
     } else {
       currentMode = 'rpg';
       document.body.classList.remove('normal-mode');
-      modeIcon.textContent = 'auto_stories'; // Ícone de livro
+      modeIcon.textContent = 'auto_stories'; 
     }
-    updateContent(); // Atualiza a tela
+    updateContent(); 
   });
 
   // --- EVENTO: Trocar Idioma (PT / EN) ---
   langBtn.addEventListener('click', () => {
     if (currentLang === 'pt') {
       currentLang = 'en';
-      langBtn.textContent = 'EN'; // Muda a letra do botão
+      langBtn.textContent = 'EN';
     } else {
       currentLang = 'pt';
-      langBtn.textContent = 'PT'; // Muda a letra do botão
+      langBtn.textContent = 'PT';
     }
-    updateContent(); // Atualiza a tela
+    updateContent(); 
   });
 });
