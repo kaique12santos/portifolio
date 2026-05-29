@@ -46,7 +46,7 @@ const portfolioContent = {
       
       // HERO
       "hero-subtitle": "— Portfólio de Desenvolvedor —",
-      "hero-bio": "Arquiteto de sistemas focado no desenvolvimento de APIs robustas, arquiteturas escaláveis e experiências de usuário fluidas. Especializado em software institucional e soluções web de alto desempenho.",
+      "hero-bio": "Arquiteto de sistemas focado no desenvolvimento de APIs robustas, arquiteturas escaláveis e experiências de usuário fluidas. Especializado em software institucional e soluções web.",
       "stat-semestre": "Semestre", "stat-projetos": "Projetos", "stat-classe": "Stack", "stat-nivel": "Nível JR",
       "hero-btn-primary": "Ver Projetos", "hero-btn-outline": "Entrar em Contato",
       
