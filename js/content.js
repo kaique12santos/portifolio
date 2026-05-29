@@ -157,7 +157,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Let's Talk?", "contact-title": "Get in Touch", "contact-intro": "Looking for a backend developer for your team?<br>Have an interesting project in mind?<br><strong>Send a message.</strong>",
-      "footer-text": "2025 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Developed with Node.js &amp; Coffee"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Developed with Node.js &amp; Coffee"
     }
   }
 };
