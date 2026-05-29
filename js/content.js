@@ -38,7 +38,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Invocação & Contato", "contact-title": "Abrir um Pergaminho", "contact-intro": "Busca um backend para sua guilda?<br>Tem uma quest interessante em mente?<br><strong>Invoque aqui.</strong>",
-      "footer-text": "MMXXV &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forjado com Node.js &amp; Café"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forjado com Node.js &amp; Café"
     },
     normal: {
       // NAV
@@ -77,7 +77,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Vamos Conversar?", "contact-title": "Entre em Contato", "contact-intro": "Buscando um desenvolvedor backend para o seu time?<br>Tem um projeto interessante em mente?<br><strong>Mande uma mensagem.</strong>",
-      "footer-text": "2025 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Desenvolvido com Node.js &amp; Café"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Desenvolvido com Node.js &amp; Café"
     }
   },
   en: {
@@ -118,7 +118,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Summoning & Contact", "contact-title": "Open a Scroll", "contact-intro": "Looking for a backend for your guild?<br>Have an interesting quest in mind?<br><strong>Summon here.</strong>",
-      "footer-text": "MMXXV &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forged with Node.js &amp; Coffee"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forged with Node.js &amp; Coffee"
     },
     normal: {
       // NAV
