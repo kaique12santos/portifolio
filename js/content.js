@@ -38,7 +38,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Invocação & Contato", "contact-title": "Abrir um Pergaminho", "contact-intro": "Busca um backend para sua guilda?<br>Tem uma quest interessante em mente?<br><strong>Invoque aqui.</strong>",
-      "footer-text": "MMXXV &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forjado com Node.js &amp; Café"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forjado com Node.js &amp; Café"
     },
     normal: {
       // NAV
@@ -46,7 +46,7 @@ const portfolioContent = {
       
       // HERO
       "hero-subtitle": "— Portfólio de Desenvolvedor —",
-      "hero-bio": "Arquiteto de sistemas focado no desenvolvimento de APIs robustas, arquiteturas escaláveis e experiências de usuário fluidas. Especializado em software institucional e soluções web de alto desempenho.",
+      "hero-bio": "Arquiteto de sistemas focado no desenvolvimento de APIs robustas, arquiteturas escaláveis e experiências de usuário fluidas. Especializado em software institucional e soluções web.",
       "stat-semestre": "Semestre", "stat-projetos": "Projetos", "stat-classe": "Stack", "stat-nivel": "Nível JR",
       "hero-btn-primary": "Ver Projetos", "hero-btn-outline": "Entrar em Contato",
       
@@ -77,7 +77,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Vamos Conversar?", "contact-title": "Entre em Contato", "contact-intro": "Buscando um desenvolvedor backend para o seu time?<br>Tem um projeto interessante em mente?<br><strong>Mande uma mensagem.</strong>",
-      "footer-text": "2025 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Desenvolvido com Node.js &amp; Café"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Desenvolvido com Node.js &amp; Café"
     }
   },
   en: {
@@ -118,7 +118,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Summoning & Contact", "contact-title": "Open a Scroll", "contact-intro": "Looking for a backend for your guild?<br>Have an interesting quest in mind?<br><strong>Summon here.</strong>",
-      "footer-text": "MMXXV &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forged with Node.js &amp; Coffee"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Forged with Node.js &amp; Coffee"
     },
     normal: {
       // NAV
@@ -157,7 +157,7 @@ const portfolioContent = {
       
       // CONTACT & FOOTER
       "contact-eyebrow": "Let's Talk?", "contact-title": "Get in Touch", "contact-intro": "Looking for a backend developer for your team?<br>Have an interesting project in mind?<br><strong>Send a message.</strong>",
-      "footer-text": "2025 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Developed with Node.js &amp; Coffee"
+      "footer-text": "2026 &nbsp;·&nbsp; Kaique &nbsp;·&nbsp; Developed with Node.js &amp; Coffee"
     }
   }
 };
