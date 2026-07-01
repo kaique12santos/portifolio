@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const inputDir = './images';
+const inputDir = './imagens';
 const outputDir = './images-otimizadas';
 
 // Array com as larguras para  gerar (Mobile, Tablet, Desktop)

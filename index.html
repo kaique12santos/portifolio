@@ -41,6 +41,7 @@
     <ul class="nav-links">
       <li><a href="#about" data-key="nav-about">Pergaminho</a></li>
       <li><a href="#projects" data-key="nav-projects">Quests</a></li>
+      <li><a href="#codices" data-key="nav-codices">Códices</a></li>
       <li><a href="#skills" data-key="nav-skills">Habilidades</a></li>
       <li><a href="#journey" data-key="nav-journey">Jornada</a></li>
       <li><a href="#contact" data-key="nav-contact">Invocar</a></li>
@@ -51,7 +52,7 @@
           loading="lazy">
         <!-- <span class="material-symbols-outlined" id="mode-icon">auto_stories</span> -->
       </button>
-      <button id="toggle-lang" class="control-btn" title="Change Language">PT</button>
+      <button id="toggle-lang" class="control-btn" title="Change Language">PT / EN</button>
     </div>
   </nav>
 
@@ -63,22 +64,22 @@
         <img src="/images/swords_24.svg" alt="Ícone de Espadas" class="swords_dourado" loading="lazy">
         <!-- <span class="material-symbols-outlined">swords</span> -->
       </div>
-      <p class="hero-subtitle-top" data-key="hero-subtitle">— Portfólio de Desenvolvedor —</p>
+      <p class="hero-subtitle-top" data-key="hero-subtitle">- Portfólio de Desenvolvedor -</p>
       <h1 class="hero-title">Kaique <span>Dev</span></h1>
       <div class="hero-rule"></div>
       <p class="hero-class">Backend &nbsp;·&nbsp; Full Stack &nbsp;·&nbsp; DSM · Fatec ZL</p>
       <p class="hero-bio" data-key="hero-bio">
         Arquiteto de sistemas e forjador de interfaces. Especializado em construir
         APIs robustas, experiências de usuário refinadas e software institucional
-        que resiste ao teste do tempo — e ao teste do usuário.
+        que resiste ao teste do tempo - e ao teste do usuário.
       </p>
       <div class="hero-stats">
         <div class="stat-box">
-          <span class="stat-value">4°</span>
+          <span class="stat-value">5°</span>
           <span class="stat-label" data-key="stat-semestre">Semestre</span>
         </div>
         <div class="stat-box">
-          <span class="stat-value">2+</span>
+          <span class="stat-value">5+</span>
           <span class="stat-label" data-key="stat-projetos">Projetos</span>
         </div>
         <div class="stat-box">
@@ -108,7 +109,7 @@
 
     <div class="about-inner">
       <div class="character-sheet reveal">
-        <p class="sheet-title" data-key="sheet-title">— Ficha —</p>
+        <p class="sheet-title" data-key="sheet-title">- Ficha -</p>
         <div class="sheet-avatar">
           <span class="avatar-placeholder">K</span>
           <div class="quest-banner-overlay">
@@ -231,13 +232,13 @@
           <img src="/images/sisLab-911-1000.webp"
             srcset="/images/sisLab-911-400.webp 400w, /images/sisLab-911-800.webp 800w, /images/sisLab-911-1000.webp 1000w"
             sizes="(max-width: 700px) 100vw, 33vw" alt="SisLab" class="avatar-image" loading="lazy">
-          <span class="quest-badge badge-main" data-key="rank-1">Principal</span>
+          <span class="quest-badge badge-main" data-key="badge-1">Principal</span>
           <div class="quest-banner-overlay"></div>
         </div>
         <div class="quest-body">
           <p class="quest-rank" data-key="rank-1">O Guardião dos Laboratórios</p>
-          <h3 class="quest-name">SisLab — Sistema de Reserva de Laboratórios</h3>
-          <p class="quest-desc">
+          <h3 class="quest-name" data-key="project-name-1">SisLab - Sistema de Reserva de Laboratórios</h3>
+          <p class="quest-desc" data-key="project-desc-1">
             Sistema institucional para gestão de reservas de laboratórios na Fatec ZL.
             Arquitetura Controller → Service → Repository, JWT Auth, auditoria com
             EventBus e rollback transacional para conflitos.
@@ -255,7 +256,7 @@
               target="_blank">
               <img src="/images/swords_24.svg" alt="Icone de Espadas" loading="lazy">
               <!-- <span class="material-symbols-outlined">swords</span> -->
-               GitHub
+              GitHub
             </a>
           </div>
         </div>
@@ -267,12 +268,13 @@
             srcset="/images/sgpi_icon-400.webp 400w, /images/sgpi_icon-800.webp 800w, /images/sgpi_icon-1000.webp 1000w"
             sizes="(max-width: 700px) 100vw, 33vw" alt="SGPI" class="avatar-image" loading="lazy">
           <div class="quest-banner-overlay"></div>
-          <span class="quest-badge badge-side" data-key="rank-2">Em Curso</span>
+          
+          <span class="quest-badge badge-done" data-key="badge-2">Concluída</span>
         </div>
         <div class="quest-body">
           <p class="quest-rank" data-key="rank-2">O Grimório da Guilda 2.0 (GED)</p>
-          <h3 class="quest-name">SGPI — Sistema de Gestão de Projetos Integradores</h3>
-          <p class="quest-desc">
+          <h3 class="quest-name" data-key="project-name-2">SGPI - Sistema de Gestão de Projetos Integradores</h3>
+          <p class="quest-desc" data-key="project-desc-2">
             Plataforma de gerenciamento para projetos integradores acadêmicos.
             Liderança técnica no backend e coordenação de equipe como Project Leader.
           </p>
@@ -301,12 +303,12 @@
             srcset="/images/API_notifica_icon-400.webp 400w, /images/API_notifica_icon-800.webp 800w, /images/API_notifica_icon-1000.webp 1000w"
             sizes="(max-width: 700px) 100vw, 33vw" alt="API Notificação" class="avatar-image" loading="lazy">
           <div class="quest-banner-overlay"></div>
-          <span class="quest-badge badge-done" data-key="rank-3">Concluída</span>
+          <span class="quest-badge badge-done" data-key="badge-3">Concluída</span>
         </div>
         <div class="quest-body">
           <p class="quest-rank" data-key="rank-3">A Rede de Energia Arcana</p>
-          <h3 class="quest-name">API de Eventos e Notificações</h3>
-          <p class="quest-desc">
+          <h3 class="quest-name" data-key="project-name-3">API de Eventos e Notificações</h3>
+          <p class="quest-desc" data-key="project-desc-3">
             Backend para processamento de eventos assíncronos e notificações.
             Aplicação rigorosa de Programação Orientada a Objetos (POO) e
             Padrões de Projeto (com Observer) para criar um system desacoplado,
@@ -335,12 +337,12 @@
             srcset="/images/API_tasks_icon-400.webp 400w, /images/API_tasks_icon-800.webp 800w, /images/API_tasks_icon-1000.webp 1000w"
             sizes="(max-width: 700px) 100vw, 33vw" alt="API Tasks" class="avatar-image" loading="lazy">
           <div class="quest-banner-overlay"></div>
-          <span class="quest-badge badge-done" data-key="rank-4">Concluída</span>
+          <span class="quest-badge badge-done" data-key="badge-4">Concluída</span>
         </div>
         <div class="quest-body">
           <p class="quest-rank" data-key="rank-4">O Forjador de Runas Sólidas</p>
-          <h3 class="quest-name">API de Tarefas</h3>
-          <p class="quest-desc">
+          <h3 class="quest-name" data-key="project-name-4">API de Tarefas</h3>
+          <p class="quest-desc" data-key="project-desc-4">
             API RESTful para gestão de tarefas e avaliações.
             Desenvolvida sob a filosofia Clean Code,
             aplicando os princípios SOLID para garantir código robusto,
@@ -363,6 +365,40 @@
         </div>
       </div>
 
+      <div class="quest-card reveal reveal-delay-1">
+        <div class="quest-banner">
+          <img src="/images/IA-LAB-Icon-1000.webp"
+            srcset="/images/IA-LAB-Icon-400.webp 400w, /images/IA-LAB-Icon-800.webp 800w, /images/IA-LAB-Icon-1000.webp 1000w"
+            sizes="(max-width: 700px) 100vw, 33vw" alt="IA LAB" class="avatar-image" loading="lazy">
+          <div class="quest-banner-overlay"></div>
+          <span class="quest-badge badge-side" data-key="badge-6">Em Curso</span>
+        </div>
+        <div class="quest-body">
+          <p class="quest-rank" data-key="rank-6">Livro de Feitiços</p>
+          <h3 class="quest-name" data-key="project-name-6">Laboratório de Estudos de IA</h3>
+          <p class="quest-desc" data-key="project-desc-6">
+            Repositório dedicado para estudos de Inteligência Artificial,
+             LLMs, Agentes Autônomos, engenharia de prompts e
+            arquitetura de software focada em IA.
+          </p>
+          <div class="quest-tags">
+            <span class="tag">IA</span>
+            <span class="tag">LLMs</span>
+            <span class="tag">Agentes Autônomos</span>
+            <span class="tag">Engenharia de Prompts</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Automações</span>
+          </div>
+          <div class="quest-footer">
+            <a href="https://github.com/kaique12santos/IA-LAB" target="_blank" class="quest-link">
+              <img src="/images/swords_24.svg" alt="Icone de Espadas" loading="lazy">
+              <!-- <span class="material-symbols-outlined">swords</span>  -->
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="quest-card reveal reveal-delay-2 quest-card-future">
         <div class="quest-banner">
           <img src="/images/proxima_quest_icon-1000.webp"
@@ -370,8 +406,9 @@
             sizes="(max-width: 700px) 100vw, 33vw" alt="Trilha Mística para Próxima Quest" class="quest-img-future"
             loading="lazy">
           <div class="quest-banner-overlay"></div>
-          <span class="quest-badge badge-future" data-key="rank-5">⏳ Em Breve</span>
+          <span class="quest-badge badge-future" data-key="badge-future">⏳ Em Breve</span>
         </div>
+
 
         <div class="quest-body">
           <p class="quest-rank" data-key="rank-5">Planejando a próxima Quest</p>
@@ -389,6 +426,65 @@
       </div>
     </div>
   </section>
+  <section id="codices">
+    <div class="section-header reveal">
+      <span class="section-eyebrow" data-key="codices-eyebrow">Pesquisa & Academia</span>
+      <h2 class="section-title" data-key="codices-title">Códices de Conhecimento</h2>
+      <div class="section-divider">
+        <div class="divider-diamond"></div>
+      </div>
+    </div>
+
+    <div class="codices-list">
+      <!-- Códice 1: Artigo Publicado -->
+      <article class="codex-item reveal">
+        <div class="codex-seal">
+          <!-- Ícone para representar o artigo (pode ser um pergaminho, livro ou selo de cera) -->
+          <img src="/images/Artigo-Icon-1000.webp"
+            srcset="/images/Artigo-Icon-400.webp 400w, /images/Artigo-Icon-800.webp 800w, /images/Artigo-Icon-1000.webp 1000w"
+            sizes="(max-width: 700px) 100vw, 33vw" alt="Ícone de Artigo" class="seal-img" loading="lazy">
+        </div>
+        <div class="codex-content">
+          <div class="codex-header">
+            <span class="codex-event" data-key="codex-event-1">EnGetec 2025 - Fatec ZL</span>
+            <span class="codex-date" data-key="codex-date-1">Dezembro 2025</span>
+          </div>
+          <h3 class="codex-title" data-key="codex-title-1">Arquitetura e Design Patterns aplicados ao SGPI com MySQL Database</h3>
+          <p class="codex-abstract" data-key="codex-abstract-1">
+            Artigo acadêmico detalhando a estruturação do Sistema de Gestão de Projetos Integradores (SGPI). 
+            A pesquisa foca na aplicação de padrões de design, arquitetura de software limpa e modelagem relacional para garantir escalabilidade.
+          </p>
+          <div class="codex-footer">
+            <span class="codex-author" data-key="codex-author-1">Kaique Caitano Dos Santos et al.</span>
+            <!-- Link para o PDF ou página da publicação -->
+            <a href="https://revista.fateczl.edu.br/index.php/engetec_revista/article/view/484" target="_blank" class="btn-outline btn-small" data-key="codex-link-1">Ler Códice</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Códice Futuro: Espaço reservado para as próximas produções -->
+      <article class="codex-item codex-future reveal reveal-delay-1">
+        <div class="codex-seal">
+          <img src="/images/misterio_icon-1000.webp" alt="Ícone de Mistério" loading="lazy" class="seal-img">
+        </div>
+        <div class="codex-content">
+          <div class="codex-header">
+            <span class="codex-event" data-key="codex-event-future">Pesquisa em Andamento</span>
+            <span class="codex-date" data-key="codex-date-future">2026 - 2027</span>
+          </div>
+          <h3 class="codex-title" data-key="codex-title-future">Novos Manuscritos na Forja</h3>
+          <p class="codex-abstract" data-key="codex-abstract-future">
+            Pesquisas futuras focadas em inteligência artificial, integração de LLMs e Identity Security (autenticação e segurança de dados) aplicados à engenharia de software e APIs.
+          </p>
+          <div class="codex-footer">
+            <span class="codex-author" data-key="codex-author-future">Kaique Caitano Dos Santos</span>
+            <span class="codex-status">Aguardando Revelação...</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
 
   <section id="skills">
     <div class="section-header reveal">
@@ -480,7 +576,7 @@
         <p class="tome-title" data-key="skill-cat-6">DevOps & Ferramentas</p>
         <ul class="tome-list">
           <li>Git / GitHub</li>
-          <li>Docker (básico)</li>
+          <li>Docker</li>
           <li>Linux</li>
           <li>Scrum / Kanban</li>
         </ul>
@@ -500,7 +596,7 @@
     <div class="timeline">
       <div class="tl-item reveal">
         <p class="tl-date" data-key="j-date-1">2026 – Presente</p>
-        <h3 class="tl-title" data-key="j-title-1">Desenvolvedor Full Stack & Tech Lead — SisLab</h3>
+        <h3 class="tl-title" data-key="j-title-1">Desenvolvedor Full Stack & Tech Lead - SisLab</h3>
         <p class="tl-desc" data-key="j-desc-1">
           Construção do sistema institucional de reservas de laboratórios para a Fatec ZL. Liderança
           de projeto, Full Stack e contribuição direta no design e prototipagem da interfaces.
@@ -508,17 +604,26 @@
       </div>
 
       <div class="tl-item reveal reveal-delay-1">
-        <p class="tl-date" data-key="j-date-2">2025 – Chegando ao Fim...</p>
-        <h3 class="tl-title" data-key="j-title-2">Backend Lead & Project Leader — SGPI</h3>
+        <p class="tl-date" data-key="j-date-5">Jun 2025 - Dez 2025</p>
+        <h3 class="tl-title" data-key="j-title-5">Produção Acadêmica</h3>
+        <p class="tl-desc" data-key="j-desc-5">
+          CoAutor do Artigo Arquitetura e Design Patterns aplicados ao Sistema Gerenciador de 
+          Projetos integradores com MySQL Database e Apresentado na EnGetec 2025 (Fatec ZL)
+        </p>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-2">
+        <p class="tl-date" data-key="j-date-2">Jan 2025 - Jun 2026</p>
+        <h3 class="tl-title" data-key="j-title-2">Backend Lead & Project Leader - SGPI</h3>
         <p class="tl-desc" data-key="j-desc-2">
           Liderança técnica e de equipe no desenvolvimento do Sistema de Gestão de
           Projetos Integradores. Responsável por arquitetura, revisão de código e entregas.
         </p>
       </div>
 
-      <div class="tl-item reveal reveal-delay-2">
-        <p class="tl-date" data-key="j-date-3">Ago 2025 – Dez 2025</p>
-        <h3 class="tl-title" data-key="j-title-3">Monitor de Engenharia de Software — Fatec ZL</h3>
+      <div class="tl-item reveal reveal-delay-3">
+        <p class="tl-date" data-key="j-date-3">Ago 2025 - Dez 2025</p>
+        <h3 class="tl-title" data-key="j-title-3">Monitor de Engenharia de Software - Fatec ZL</h3>
         <p class="tl-desc" data-key="j-desc-3">
           Apoio a estudantes nas disciplinas de Engenharia de Software I e II, facilitando a
           compreensão de padrões arquiteturais, metodologias ágeis e documentação de sistemas e os seus
@@ -526,9 +631,9 @@
         </p>
       </div>
 
-      <div class="tl-item reveal reveal-delay-3">
-        <p class="tl-date" data-key="j-date-4">2024 – Jun 2027 (Previsão)</p>
-        <h3 class="tl-title" data-key="j-title-4">Ingresso em DSM — Fatec Zona Leste</h3>
+      <div class="tl-item reveal reveal-delay-4">
+        <p class="tl-date" data-key="j-date-4">Jun 2024 - Jun 2027 (Previsão)</p>
+        <h3 class="tl-title" data-key="j-title-4">Ingresso em DSM - Fatec Zona Leste</h3>
         <p class="tl-desc" data-key="j-desc-4">
           Início da formação como Tecnólogo em Desenvolvimento de Software Multiplataforma,
           com foco em desenvolvimento web, mobile e Desktop.
@@ -553,7 +658,7 @@
         <strong>Invoque aqui.</strong>
       </p>
       <div class="contact-links">
-        <a href="mailto:exemplo@email.com" class="contact-link">
+        <a href="mailto:kaiquecaitano334@gmail.com" class="contact-link">
           <img src="/images/email_icon-1000.webp"
             srcset="/images/email_icon-400.webp 400w, /images/email_icon-800.webp 800w, /images/email_icon-1000.webp 1000w"
             sizes="200px" alt="Ícone de Carta" class="contact-img-icon" loading="lazy">
